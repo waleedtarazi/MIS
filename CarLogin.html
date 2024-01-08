@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to bottom right,  rgb(86, 86, 86),black );
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            width: 40%;
+            height: 75%;
+            opacity: 65%;
+            background-color: rgb(200, 200, 200);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .login_container{
+          width: 90%;
+          height: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        h1{
+            height: 20%;
+            text-align: center;
+        }
+        .inputs{
+            height: 60%;
+            width: 100%;
+            position: relative;
+            display: flex;
+          justify-content: start;
+          align-items: center;
+          flex-direction: column;
+          gap: 12px;
+          margin-bottom: -25%;
+        }
+        p{
+            font-size: large;
+            margin-bottom: -5px;
+        }
+        input{
+            width: 100%;
+            height: 32px;
+            border-radius: 10px;
+            border: 2px solid ;
+            background-color: transparent;
+            border-color: rgb(255, 173, 42);
+            outline: none;
+            margin-bottom: 10px;
+        }
+        a{
+            width: 100%;
+            text-align: right;
+            color: rgb(255, 173, 42);
+        }
+        a:hover{
+            color: gray;
+        }
+        button{
+            width: 45%;
+            height: 12%;
+            border-radius: 10px;
+            border: 2px solid orange;
+            background-color: orange;
+            color: white;
+            font-size: medium;
+            cursor: pointer;
+            margin-top: 25%;
+        }
+        button:hover{
+            border-radius: 10px;
+            border: 2px solid orange;
+            background-color: transparent;
+            color: orange;
+            cursor: pointer;
+        }
+        .email{
+            position: absolute;
+            top: 35px;
+            left: 4%;
+            background-color: rgb(200, 200, 200);
+            color: rgb(255, 173, 42);
+        }
+        .password{
+            position: absolute;
+            top: 95px;
+            left: 4%;
+            background-color: rgb(200, 200, 200);
+            color: rgb(255, 173, 42);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main">
+        <form class="login_container">
+            <h1>Login</h1>
+            <div class="inputs">
+                <p>Enter your data to login:</p>
+                <label for='email' class="email">Email</label>
+            <input type='Email' name="email" />
+            <label for='password' class="password">Password</label>
+            <input type='password' name="password"/>
+            <a href="#">Forget password?</a>
+        </div>
+        <button>Login</button>
+        </form>
+    </div>
+</body>
+</html>
